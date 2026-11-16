@@ -1,0 +1,43 @@
+# ============================================================
+#  量化交易入门日志 —— 不纳入版本控制的内容
+#  原始数据体积约 3.6 GB（parquet 为主），远超 GitHub 限制，
+#  统一由 practiceNN/scripts/ 下的爬取脚本重新获取。
+# ============================================================
+
+# ---- Python 虚拟环境与缓存 ----
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# ---- 编辑器 / 系统 ----
+.idea/
+*.iml
+.vscode/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- 原始数据（所有练习的 data/ 目录）----
+data/
+practice01/data_dynamic/*.csv
+
+# ---- 数据文件格式（任何位置的原始数据）----
+*.parquet
+*.pkl
+*.h5
+*.feather
+*.db
+
+# ---- 运行日志与临时输出 ----
+*.log
+output/
+tmp/
+
+# ---- 本地交接文档（含本机路径等个人信息，不公开）----
+项目说明与上下文.md
+
+# 说明：practiceNN/results/ 下的图表与报表 CSV 需要提交，故不忽略 *.csv
